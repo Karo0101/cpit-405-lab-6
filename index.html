@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPIT-405</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CPIT-405 Lab 6</h1>
+        <p class="subtitle">Demonstrating JavaScript Events, DOM Manipulation, and Cookie Persistence</p>
+
+        <div id="status-message" class="status-message hidden"></div>
+
+        <div class="vote-section">
+            <button id="like-btn" class="btn btn-like">
+                <span class="icon">👍</span> Like <span id="like-count" class="badge">0</span>
+            </button>
+            <button id="dislike-btn" class="btn btn-dislike">
+                <span class="icon">👎</span> Dislike <span id="dislike-count" class="badge">0</span>
+            </button>
+        </div>
+
+        <div class="comment-section">
+            <h3>Leave a Comment</h3>
+            <div class="input-group">
+                <input type="text" id="comment-input" placeholder="Write your comment here..." />
+                <button id="submit-comment-btn" class="btn btn-primary">Submit Comment</button>
+            </div>
+            
+            <h3>Comments</h3>
+            <ul id="comments-list" class="comments-list">
+                <li class="empty-msg">No comments yet. Be the first to comment!</li>
+            </ul>
+        </div>
+
+        <div class="reset-section">
+            <button id="reset-btn" class="btn btn-danger">Reset All Choices & Cookies</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
